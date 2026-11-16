@@ -27,11 +27,7 @@ This repository contains Java practical examples organized by the official eight
 │   ├── map/
 │   └── set/
 ├── Unit_8_Advanced_OOP_Concepts/
-└── Supplementary_Topics/
-    ├── Swing/
-    ├── Applet/
-    ├── JDBC/
-    └── Java_Utilities/
+
 ```
 
 ## Syllabus coverage
@@ -44,11 +40,6 @@ This repository contains Java practical examples organized by the official eight
 - **Unit 6 — File Handling:** 6 Java source files. [Open unit folder](Unit_6_File_Handling/)
 - **Unit 7 — Collections and Generics:** 19 Java source files. [Open unit folder](Unit_7_Collections_and_Generics/)
 - **Unit 8 — Advanced OOP Concepts:** 0 Java source files. [Open unit folder](Unit_8_Advanced_OOP_Concepts/)
-- **Supplementary topics:** 37 Java source files covering Swing, Applets, JDBC and Java utility classes.
-
-## Practical topics that still need examples
-
-The following items are not yet represented by a focused practical program in this repository. Existing source files have been moved, not duplicated, and no placeholder Java programs have been added to disguise missing coverage.
 
 ### Unit 1 — Introduction to Java and OOP
 - Dedicated practicals or notes for Java history/features and buzzwords
@@ -110,12 +101,5 @@ java -cp out Unit_1_Introduction_to_Java_and_OOP.HelloWorldProgram
 
 - File I/O and serialization examples use paths relative to the repository root. Run them from the repository root so the sample input and generated output files resolve correctly.
 - JDBC examples compile against the standard JDBC API, but need MySQL Server and MySQL Connector/J at runtime. See [`Supplementary_Topics/JDBC/README.md`](Supplementary_Topics/JDBC/README.md) and [`setup.sql`](Supplementary_Topics/JDBC/setup.sql).
-- Applets are legacy technology and are not executable in modern web browsers.
-
-## Notes
-
-- The original class names and teaching logic are retained except for path/package updates and the small JDBC table-schema correction needed for consistency.
-- Old compiled `.class` files and generated `.ser` files were removed from source control; `.gitignore` now excludes them.
-- Unit 8 intentionally contains no fabricated Java examples. Its README lists the syllabus topics awaiting practical coverage.
 
 Maintained by **Rupesh Adhikari** · **BCA Nepal**
