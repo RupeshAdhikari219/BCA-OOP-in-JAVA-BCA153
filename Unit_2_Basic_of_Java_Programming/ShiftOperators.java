@@ -1,0 +1,14 @@
+package Unit_2_Basic_of_Java_Programming;
+
+public class ShiftOperators {
+    public static void main(String[] args)
+    {
+        int a = 40;
+    
+        // Using left shift
+        System.out.println("a<<1 : " + (a << 1));
+      
+        // Using right shift
+        System.out.println("a>>1 : " + (a >> 1));
+    }
+}
