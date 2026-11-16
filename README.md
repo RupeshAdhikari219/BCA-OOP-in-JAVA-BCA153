@@ -4,7 +4,7 @@
 **University:** Tribhuvan University · **Year/Semester:** First Year / Second Semester  
 **Credits:** 3 · **Workload:** 6 hours per week (3 lecture + 3 practical)
 
-This repository contains Java practical examples organized by the official eight-unit BCA 153 syllabus. The actual source folders follow the syllabus order; the detailed index in [`SYLLABUS_MAP.md`](SYLLABUS_MAP.md) lists every Java source file at its current path.
+This repository contains Java practical examples organized by the official eight-unit BCA 153 syllabus.
 
 ## Folder structure
 
@@ -27,11 +27,7 @@ This repository contains Java practical examples organized by the official eight
 │   ├── map/
 │   └── set/
 ├── Unit_8_Advanced_OOP_Concepts/
-└── Supplementary_Topics/
-    ├── Swing/
-    ├── Applet/
-    ├── JDBC/
-    └── Java_Utilities/
+
 ```
 
 ## Syllabus coverage
@@ -44,21 +40,15 @@ This repository contains Java practical examples organized by the official eight
 - **Unit 6 — File Handling:** 6 Java source files. [Open unit folder](Unit_6_File_Handling/)
 - **Unit 7 — Collections and Generics:** 19 Java source files. [Open unit folder](Unit_7_Collections_and_Generics/)
 - **Unit 8 — Advanced OOP Concepts:** 0 Java source files. [Open unit folder](Unit_8_Advanced_OOP_Concepts/)
-- **Supplementary topics:** 37 Java source files covering Swing, Applets, JDBC and Java utility classes.
-
-## Practical topics that still need examples
-
-The following items are not yet represented by a focused practical program in this repository. Existing source files have been moved, not duplicated, and no placeholder Java programs have been added to disguise missing coverage.
 
 ### Unit 1 — Introduction to Java and OOP
 - Dedicated practicals or notes for Java history/features and buzzwords
 - JVM/JDK/JRE architecture demonstration
 - Procedural-vs-OOP comparison
-- A setup/IDE walkthrough and focused common-error troubleshooting examples
-
+  
 ### Unit 2 — Basic of Java Programming
 - A focused example distinguishing keywords, identifiers and separators
-- A dedicated example showing comment types (comments appear throughout the source, but are not taught in a focused program)
+- A dedicated example showing comment types (comments appear throughout the source)
 
 ### Unit 3 — Class and Objects
 - Copy-constructor example
@@ -91,31 +81,5 @@ The following items are not yet represented by a focused practical program in th
 - Stream API examples
 - Optional example
 - Method-reference examples
-
-## Running the examples
-
-- Use a JDK (the project was checked with JDK 21).
-- Compile the source tree from the repository root with:
-
-```bash
-mkdir -p out
-find Unit_* Supplementary_Topics -name '*.java' -print0 | xargs -0 javac -d out
-```
-
-- Run a class using its fully qualified package name, for example:
-
-```bash
-java -cp out Unit_1_Introduction_to_Java_and_OOP.HelloWorldProgram
-```
-
-- File I/O and serialization examples use paths relative to the repository root. Run them from the repository root so the sample input and generated output files resolve correctly.
-- JDBC examples compile against the standard JDBC API, but need MySQL Server and MySQL Connector/J at runtime. See [`Supplementary_Topics/JDBC/README.md`](Supplementary_Topics/JDBC/README.md) and [`setup.sql`](Supplementary_Topics/JDBC/setup.sql).
-- Applets are legacy technology and are not executable in modern web browsers.
-
-## Notes
-
-- The original class names and teaching logic are retained except for path/package updates and the small JDBC table-schema correction needed for consistency.
-- Old compiled `.class` files and generated `.ser` files were removed from source control; `.gitignore` now excludes them.
-- Unit 8 intentionally contains no fabricated Java examples. Its README lists the syllabus topics awaiting practical coverage.
 
 Maintained by **Rupesh Adhikari** · **BCA Nepal**
